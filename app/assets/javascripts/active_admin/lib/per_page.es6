@@ -37,7 +37,7 @@
   };
 
   $(document).
-    on('change', '.pagination_per_page > select', function(event) {
+    on('change', '.js-pagination-per-page > select', function(event) {
       PerPage._jQueryInterface.call($(this), 'update')
     });
 

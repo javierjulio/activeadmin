@@ -13,7 +13,7 @@ module ActiveAdmin
       include ::ActiveAdmin::Helpers::Collection
 
       def default_class_name
-        "scopes"
+        "scopes table_tools_segmented_control"
       end
 
       def tag_name
@@ -36,10 +36,10 @@ module ActiveAdmin
         li class: classes_for_scope(scope) do
           params = request.query_parameters.except :page, :scope, :commit, :format
 
-          a href: url_for(scope: scope.id, params: params), class: 'table_tools_button' do
+          a href: url_for(scope: scope.id, params: params), class: 'button button-default' do
             text_node scope_name(scope)
-            span class: 'count' do
-              "(#{get_scope_count(scope)})"
+            span class: 'badge' do
+              "#{get_scope_count(scope)}"
             end if options[:scope_count] && scope.show_count
           end
         end

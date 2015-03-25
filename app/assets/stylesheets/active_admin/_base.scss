@@ -32,6 +32,10 @@
 @import "./structure/main_structure";
 @import "./structure/title_bar";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   @include sans-family;
   line-height: 1.5;

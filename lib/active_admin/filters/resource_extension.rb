@@ -172,7 +172,6 @@ module ActiveAdmin
       def add_search_status_sidebar_section
         self.sidebar_sections << ActiveAdmin::Filters::ActiveSidebar.new
       end
-
     end
 
   end

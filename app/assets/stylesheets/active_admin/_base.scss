@@ -29,9 +29,7 @@
 @import "./structure/main_structure";
 @import "./structure/title_bar";
 
-* {
-  box-sizing: border-box;
-}
+*,
 *:before,
 *:after {
   box-sizing: border-box;

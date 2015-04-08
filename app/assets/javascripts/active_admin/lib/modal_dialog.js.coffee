@@ -38,8 +38,14 @@ ActiveAdmin.modal_dialog = (message, inputs, callback)->
       $('body').trigger 'modal_dialog:after_open', [form]
     dialogClass: 'active_admin_dialog'
     buttons:
-      OK: ->
-        callback $(@).serializeObject()
-        $(@).dialog('close')
-      Cancel: ->
-        $(@).dialog('close').remove()
+      OK:
+        text: 'OK'
+        class: 'button'
+        click: ->
+          callback $(@).serializeObject()
+          $(@).dialog('close')
+      Cancel:
+        text: 'Cancel'
+        class: 'button cancel'
+        click: ->
+          $(@).dialog('close').remove()

@@ -13,7 +13,7 @@ class ActiveAdmin.DropdownMenu
     @isOpen  = false
 
     @$menuButton = @$element.find '.dropdown_menu_button'
-    @$menuList   = @$element.find '.dropdown_menu_list_wrapper'
+    @$menuList   = @$element.find '.dropdown-menu'
 
     @_buildMenuList()
     @_bind()
@@ -67,4 +67,4 @@ class ActiveAdmin.DropdownMenu
 $.widget.bridge 'aaDropdownMenu', ActiveAdmin.DropdownMenu
 
 $(document).on 'ready page:load turbolinks:load', ->
-  $('.dropdown_menu').aaDropdownMenu()
+  $('.dropdown').aaDropdownMenu()

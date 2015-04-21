@@ -73,7 +73,7 @@ module ActiveAdmin
 
       def commit_action_with_cancel_link
         add_create_another_checkbox
-        action(:submit)
+        action(:submit, button_html: { class: 'button button-primary' })
         cancel_link
       end
 

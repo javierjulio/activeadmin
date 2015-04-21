@@ -72,7 +72,7 @@ module ActiveAdmin
       end
 
       def commit_action_with_cancel_link
-        action(:submit)
+        action(:submit, button_html: { class: 'button button-primary' })
         cancel_link
       end
 

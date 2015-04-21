@@ -1,6 +1,6 @@
 $(document).on 'ready page:load turbolinks:load', ->
   # Clear Filters button
-  $('.clear_filters_btn').click (e) ->
+  $('.js-clear-filters-button').click (e) ->
     params = window.location.search.slice(1).split('&')
     regex = /^(q\[|q%5B|q%5b|page|commit)/
     if typeof Turbolinks != 'undefined'

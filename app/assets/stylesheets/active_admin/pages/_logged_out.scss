@@ -1,9 +1,5 @@
-body.logged_out {
-  background-color: #ECF0F1;
-}
-
 #login {
-  background-color: #fff;
+  background-color: $panel-background-color;
   border-radius: $border-radius-base;
   margin: 70px auto;
   padding: 15px;

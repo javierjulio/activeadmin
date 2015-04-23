@@ -12,7 +12,7 @@ textarea {
   display: inline-block;
   outline: none;
   padding: $padding-base-vertical $padding-base-horizontal;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   width: calc(80% - #{($padding-base-horizontal * 2) + 2px});
 
   &:focus {
@@ -78,7 +78,7 @@ textarea {
 
     .has_many_container {
       h3 {
-        border-bottom: 1px solid #e8e8e8;
+        border-bottom: 1px solid darken($panel-background-color, 12%);
         margin-bottom: 20px;
       }
     }
@@ -86,7 +86,7 @@ textarea {
 
   // relative so the absolutely-positioned handle will fit
   .has_many_fields {
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid darken($panel-background-color, 12%);
     margin-bottom: 15px;
 
     ol {
@@ -237,10 +237,10 @@ $date-range-filter-input-width: ($sidebar-inner-content-width / 2) - ($filter-fi
   &.filter_date_range {
     input {
       width: $date-range-filter-input-width;
-    }
 
-    input + input {
-      margin-left: 6px;
+      & + input {
+        margin-left: 6px;
+      }
     }
   }
 }

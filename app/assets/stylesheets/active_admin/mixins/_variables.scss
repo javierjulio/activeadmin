@@ -216,6 +216,16 @@ $title-bar-color: $text-color !default;
 
 $title-bar-heading-font-size: 1.9em !default;
 
+//== Date Picker
+
+$date-picker-header-background-color: $primary-color;
+$date-picker-header-link-color: #fff !default;
+$date-picker-header-link-hover-color: #fff !default;
+
+$date-picker-calendar-background-color: #fff !default;
+$date-picker-calendar-link-hover-background-color: #ECF0F1 !default;
+$date-picker-calendar-link-active-background-color: darken(#ECF0F1, 10%) !default;
+
 //== Typography
 
 $hr-border-color: darken($body-background-color, 15%) !default;

@@ -15,9 +15,9 @@
 }
 
 .ui-datepicker-header {
-  background-color: $primary-color;
+  background-color: $date-picker-header-background-color;
   border-radius: $border-radius-base $border-radius-base 0 0;
-  color: #fff;
+  color: $date-picker-header-link-color;
   padding: 5px;
   position: relative; // for datepicker prev/next buttons
 }
@@ -25,7 +25,7 @@
 .ui-datepicker-prev,
 .ui-datepicker-next {
   bottom: 0;
-  color: #fff;
+  color: $date-picker-header-link-color;
   cursor: pointer;
   display: block;
   position: absolute;
@@ -34,7 +34,7 @@
 
   &:focus,
   &:hover {
-    color: #fff;
+    color: $date-picker-header-link-hover-color;
   }
 
   // base for arrows
@@ -72,7 +72,7 @@
 }
 
 .ui-datepicker-calendar {
-  background-color: #fff;
+  background-color: $date-picker-calendar-background-color;
   border: none;
   margin-bottom: 0;
 
@@ -103,18 +103,17 @@
         padding: 6px 0;
 
         &:hover {
-          background-color: darken(#ECF0F1, 5%);
+          background-color: $date-picker-calendar-link-hover-background-color;
         }
 
         &.ui-state-active,
         &.ui-state-active:hover {
-          background-color: lighten($primary-color, 10%);
-          color: #fff;
+          background-color: $date-picker-calendar-link-active-background-color;
         }
 
         &.ui-state-highlight,
         &.ui-state-highlight:hover { // today's date
-          background-color: darken(#ECF0F1, 5%);
+          background-color: $date-picker-calendar-link-hover-background-color;;
         }
       }
     }

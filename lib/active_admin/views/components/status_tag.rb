@@ -14,7 +14,7 @@ module ActiveAdmin
         'status_tag'
       end
 
-      # @overload status_tag(status, type = nil, options = {})
+      # @overload status_tag(status, options = {})
       #   @param [String] status the status to display. One of the span classes will be an underscored version of the status.
       #   @param [Hash] options
       #   @option options [String] :class to override the default class
@@ -30,9 +30,7 @@ module ActiveAdmin
       #   status_tag('active', class: 'important', id: 'status_123', label: 'on')
       #   # => <span class='status_tag active important' id='status_123'>on</span>
       #
-      def build(*args)
-        options = args.extract_options!
-        status = args[0]
+      def build(status, options = {})
         label = options.delete(:label)
         classes = options.delete(:class)
         status = convert_to_boolean_status(status)

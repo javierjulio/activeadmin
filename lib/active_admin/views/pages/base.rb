@@ -27,7 +27,6 @@ module ActiveAdmin
             insert_tag Arbre::HTML::Title, [title, helpers.active_admin_namespace.site_title(self)].compact.join(" | ")
 
             text_node stylesheet_link_tag('active_admin.css', media: 'screen').html_safe
-            text_node stylesheet_link_tag('active_admin/print.css', media: 'print').html_safe
 
             active_admin_namespace.meta_tags.each do |name, content|
               text_node(tag(:meta, name: name, content: content))

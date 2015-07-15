@@ -28,18 +28,18 @@
 
 //== Scaffolding
 
-$primary-color: #34495E !default;
-$success-color: #2ECC71 !default;
-$warning-color: #F1C40F !default;
-$error-color: #E74C3C !default;
+$primary-color: #34495e !default;
+$success-color: #2ecc71 !default;
+$warning-color: #f1c40f !default;
+$error-color: #e74c3c !default;
 
 $body-background-color: #fff !default;
 
-$text-color: #3F4C4D !default;
-$text-muted-color: #7F8C8D !default;
+$text-color: #3f4c4d !default;
+$text-muted-color: #7f8c8d !default;
 
-$link-color: #2980B9 !default;
-$link-hover-color: darken(#2980B9, 5%) !default;
+$link-color: #2980b9 !default;
+$link-hover-color: darken(#2980b9, 5%) !default;
 $link-hover-decoration: underline !default;
 
 //== Typography
@@ -102,8 +102,8 @@ $button-primary-border-color: darken($primary-color, 5%) !default;
 //== Forms
 
 $input-background-color: #fff !default;
-$input-border-color: lighten(#BDC3C7, 5%) !default;
-$input-border-focus-color: darken(#BDC3C7, 5%) !default;
+$input-border-color: lighten(#bdc3c7, 5%) !default;
+$input-border-focus-color: darken(#bdc3c7, 5%) !default;
 $input-border-radius: $border-radius-base !default;
 $input-color: $text-color !default;
 
@@ -116,7 +116,7 @@ $cursor-disabled: not-allowed !default; // for forms and buttons
 $caret-width-base: 4px !default;
 
 $dropdown-background-color: #fff !default;
-$dropdown-border-color: rgba(0, 0, 0, .15) !default;
+$dropdown-border-color: rgba(0, 0, 0, 0.15) !default;
 
 $dropdown-link-color: $text-color !default;
 $dropdown-link-hover-color: darken($text-color, 5%) !default;
@@ -128,7 +128,7 @@ $table-border-color: darken($body-background-color, 12%) !default;
 $table-cell-padding: 8px !default;
 $table-condensed-cell-padding: 5px !default;
 
-$table-stripe-color: lighten(#ECF0F1, 4%) !default;
+$table-stripe-color: lighten(#ecf0f1, 4%) !default;
 $table-selected-color: #fcf9c1 !default;
 
 //== Badges
@@ -142,8 +142,8 @@ $badge-line-height: 1 !default;
 
 //== Breadcrumbs
 
-$breadcrumb-color: #7F8C8D !default;
-$breadcrumb-separator-color: #7F8C8D !default;
+$breadcrumb-color: #7f8c8d !default;
+$breadcrumb-separator-color: #7f8c8d !default;
 $breadcrumb-separator: "/" !default;
 
 //== Flash Messages
@@ -186,9 +186,9 @@ $navbar-link-active-background-color: lighten($primary-color, 8%) !default;
 
 //== Panels
 
-$panel-background-color: lighten(#ECF0F1, 4%) !default;
+$panel-background-color: lighten(#ecf0f1, 4%) !default;
 $panel-body-padding: 15px !default;
-$panel-heading-background-color: #ECF0F1 !default;
+$panel-heading-background-color: #ecf0f1 !default;
 $panel-heading-padding: 10px 15px !default;
 $panel-border-radius: $border-radius-base !default;
 
@@ -198,8 +198,8 @@ $status-tag-border-radius: $border-radius-base !default;
 $status-tag-padding: 0.2em 0.5em !default;
 
 $status-tag-color: #fff !default;
-$status-tag-no-background-color: #7F8C8D !default;
-$status-tag-yes-background-color: #27AE60 !default;
+$status-tag-no-background-color: #7f8c8d !default;
+$status-tag-yes-background-color: #27ae60 !default;
 
 //== Tabs
 
@@ -213,7 +213,7 @@ $tabs-active-link-hover-color: $text-color !default;
 
 //== Title Bar
 
-$title-bar-background-color: lighten(#ECF0F1, 2%) !default;
+$title-bar-background-color: lighten(#ecf0f1, 2%) !default;
 $title-bar-color: $text-color !default;
 
 $title-bar-heading-font-size: 1.9em !default;
@@ -225,8 +225,8 @@ $date-picker-header-link-color: #fff !default;
 $date-picker-header-link-hover-color: #fff !default;
 
 $date-picker-calendar-background-color: #fff !default;
-$date-picker-calendar-link-hover-background-color: #ECF0F1 !default;
-$date-picker-calendar-link-active-background-color: darken(#ECF0F1, 10%) !default;
+$date-picker-calendar-link-hover-background-color: #ecf0f1 !default;
+$date-picker-calendar-link-active-background-color: darken(#ecf0f1, 10%) !default;
 
 //== Typography
 

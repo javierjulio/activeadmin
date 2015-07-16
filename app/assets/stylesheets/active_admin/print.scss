@@ -59,7 +59,8 @@ form .actions,
 
 // Tables
 .table_tools {
-  ul, li {
+  ul,
+  li {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -91,11 +92,11 @@ form .actions,
   vertical-align: baseline;
 
   &:before {
-    content: '(';
+    content: "(";
   }
 
   &:after {
-    content: ')';
+    content: ")";
   }
 }
 
@@ -112,7 +113,8 @@ table {
     font-weight: bold;
   }
 
-  th, td {
+  th,
+  td {
     border-bottom: 1px solid black;
     padding: 8px;
     vertical-align: top;
@@ -166,7 +168,8 @@ fieldset {
 }
 
 form {
-  ol, li {
+  ol,
+  li {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -185,12 +188,14 @@ form {
       font-weight: normal;
 
       &:before {
-        content: ' (required)';
+        content: " (required)";
       }
     }
+  }
 
-    input, textarea, select {
-      width: calc(100% - #{($padding-base-horizontal * 2) + 2px});
-    }
+  input,
+  textarea,
+  select {
+    width: calc(100% - #{($padding-base-horizontal * 2) + 2px});
   }
 }

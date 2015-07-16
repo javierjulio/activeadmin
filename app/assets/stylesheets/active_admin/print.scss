@@ -11,6 +11,9 @@ $line-height-base: 1.5;
 $primary-color: black;
 $text-color: black;
 
+$table-border-color: black;
+$fieldset-border-color: black;
+
 // Normalize
 @import "active_admin/normalize";
 
@@ -18,7 +21,7 @@ $text-color: black;
 @import "active_admin/typography";
 
 body {
-  background-color: #fff;
+  background-color: $body-background-color;
   color: $text-color;
   font-family: $font-family-sans-serif;
   font-size: $font-size-base;
@@ -115,7 +118,7 @@ table {
 
   th,
   td {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $table-border-color;
     padding: 8px;
     vertical-align: top;
   }
@@ -137,12 +140,11 @@ table {
 }
 
 .active_admin_comment {
-  border-bottom: 1px solid black;
   padding: 1em 0;
+}
 
-  .active_admin_comment_meta {
-    margin-bottom: 0.7em;
-  }
+.active_admin_comment_meta {
+  margin-bottom: 0.7em;
 }
 
 // Attribute Tables
@@ -162,7 +164,7 @@ fieldset {
   padding: 2em 0 0 0;
 
   fieldset {
-    border: 1px solid black;
+    border: 1px solid $fieldset-border-color;
     padding: 1em;
   }
 }

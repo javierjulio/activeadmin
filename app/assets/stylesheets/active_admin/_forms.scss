@@ -71,20 +71,19 @@ textarea {
       padding: 15px;
       width: 100%;
     }
-
-    .has-many-container {
-      h3 {
-        border-bottom: 1px solid darken($panel-background-color, 12%);
-        margin-bottom: 20px;
-      }
-    }
   }
 
   > fieldset {
     padding: 15px;
   }
 
-  // relative so the absolutely-positioned handle will fit
+  .has-many-container {
+    h3 {
+      border-bottom: 1px solid darken($panel-background-color, 12%);
+      margin-bottom: 20px;
+    }
+  }
+
   .has-many-fields {
     border-bottom: 1px solid darken($panel-background-color, 12%);
     margin-bottom: 15px;

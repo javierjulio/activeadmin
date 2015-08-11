@@ -3,6 +3,7 @@
   color: $status-tag-color;
   padding: $status-tag-padding;
   text-align: center;
+  white-space: nowrap;
 
   &,
   &.no {

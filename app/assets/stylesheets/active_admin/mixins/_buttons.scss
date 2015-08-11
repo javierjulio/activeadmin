@@ -40,7 +40,7 @@
     }
 
     &:active {
-      box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     }
   }
 
@@ -56,13 +56,13 @@
   color: $button-primary-color;
 
   &:not(.disabled) {
-    &:hover{
+    &:hover {
       background-color: darken($button-primary-background-color, 10%);
       border-color: darken($button-primary-border-color, 15%);
     }
 
     &:active {
-      box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     }
   }
 

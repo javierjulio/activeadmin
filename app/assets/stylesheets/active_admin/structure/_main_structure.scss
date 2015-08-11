@@ -1,28 +1,28 @@
-#active_admin_content {
+.active-admin-content {
   @include clearfix;
   padding: $horizontal-page-margin;
 
   // so index table and filters scroll horizontally
-  &.with_sidebar {
+  &.with-sidebar {
     display: table;
     width: 100%;
   }
 }
 
-#main_content_wrapper {
+.main-content-wrapper {
   float: left;
   width: 100%;
 }
 
-#main_content {
+.main-content {
   margin-right: $sidebar-width + $horizontal-page-margin;
 }
 
-.without_sidebar #main_content {
+.without-sidebar .main-content {
   margin-right: 0;
 }
 
-#sidebar {
+.sidebar-wrapper {
   float: left;
   margin-left: -$sidebar-width;
   width: $sidebar-width;

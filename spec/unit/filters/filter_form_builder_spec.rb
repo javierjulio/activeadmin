@@ -43,7 +43,7 @@ describe ActiveAdmin::Filters::ViewHelper do
     let(:body) { Capybara.string(filter :title) }
 
     it "should generate a form which submits via get" do
-      expect(body).to have_selector("form.filter_form[method=get]")
+      expect(body).to have_selector("form.filter-form[method=get]")
     end
 
     it "should generate a filter button" do

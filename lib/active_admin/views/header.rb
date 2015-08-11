@@ -19,11 +19,11 @@ module ActiveAdmin
       end
 
       def build_global_navigation
-        insert_tag view_factory.global_navigation, @menu, class: 'tabs'
+        insert_tag view_factory.global_navigation, @menu, class: 'main-navigation tabs'
       end
 
       def build_utility_navigation
-        insert_tag view_factory.utility_navigation, @utility_menu, id: "utility_nav", class: 'utility-nav tabs'
+        insert_tag view_factory.utility_navigation, @utility_menu, id: "utility_nav", class: 'main-utility-navigation tabs'
       end
 
     end

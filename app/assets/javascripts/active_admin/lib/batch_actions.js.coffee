@@ -30,10 +30,10 @@ $(document).on 'ready page:load turbolinks:load', ->
     if $(".js-index-table").length
       $(".js-index-table").tableCheckboxToggler()
     else
-      $(".paginated_collection").checkboxToggler()
+      $(".paginated-collection").checkboxToggler()
 
-    $(document).on 'change', '.paginated_collection :checkbox', ->
-      if $(".paginated_collection :checkbox:checked").length
+    $(document).on 'change', '.paginated-collection :checkbox', ->
+      if $(".paginated-collection :checkbox:checked").length
         $(".batch_actions_selector").each -> $(@).aaDropdownMenu("enable")
       else
         $(".batch_actions_selector").each -> $(@).aaDropdownMenu("disable")

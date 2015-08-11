@@ -22,7 +22,7 @@ thead {
 }
 
 // -------------------------------------- Index Tables
-table.index_table {
+.index_table {
   th {
     a,
     a:link,
@@ -86,26 +86,26 @@ table.index_table {
 // -------------------------------------- Resource Attributes Table
 .attributes_table {
   overflow: hidden;
-}
 
-.attributes_table table {
-  col {
-    border-right: 1px solid $table-border-color;
+  table {
+    col {
+      border-right: 1px solid $table-border-color;
 
-    &:first-child {
-      border-right: 2px solid $table-border-color;
+      &:first-child {
+        border-right: 2px solid $table-border-color;
+      }
     }
-  }
 
-  th {
-    width: 180px;
-  }
+    th {
+      width: 180px;
+    }
 
-  td .empty {
-    color: $text-muted-color;
-    font-size: 0.8em;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
+    td .empty {
+      color: $text-muted-color;
+      font-size: 0.8em;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
   }
 }
 

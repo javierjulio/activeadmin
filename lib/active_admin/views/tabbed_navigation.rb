@@ -60,7 +60,6 @@ module ActiveAdmin
           end
 
           if children.present?
-            li.add_class "has_nested"
             ul do
               children.each { |child| build_menu_item child }
             end

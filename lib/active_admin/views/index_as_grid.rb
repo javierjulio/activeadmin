@@ -46,7 +46,7 @@ module ActiveAdmin
 
       def build_table
         resource_selection_toggle_panel if active_admin_config.batch_actions.any?
-        table class: "index_grid" do
+        table class: "index-grid" do
           @collection.in_groups_of(number_of_columns).each do |group|
             build_row(group)
           end

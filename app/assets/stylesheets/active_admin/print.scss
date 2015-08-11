@@ -50,8 +50,8 @@ input[type=file],
 form .password,
 form .hidden,
 form .actions,
-#filters-sidebar-section,
-#footer {
+.sidebar-section,
+.footer {
   display: none;
 }
 
@@ -124,14 +124,6 @@ table {
   }
 }
 
-.index_grid {
-  td {
-    img {
-      max-width: 1in;
-    }
-  }
-}
-
 // Show
 .panel {
   margin-bottom: 3em;
@@ -177,13 +169,13 @@ form {
     padding: 0;
   }
 
+  li > label,
+  .fragments > .label {
+    font-weight: bold;
+  }
+
   li {
     padding: 1em 0;
-
-    > label,
-    legend label {
-      font-weight: bold;
-    }
 
     abbr[title] {
       border-bottom: none;

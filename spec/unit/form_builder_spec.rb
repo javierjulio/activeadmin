@@ -529,22 +529,22 @@ RSpec.describe ActiveAdmin::FormBuilder do
       end
 
       it "should add a link to remove new nested records" do
-        expect(body).to have_selector(".has_many_container > fieldset > ol > li > a.button.has_many_remove[href='#']", text: "Remove")
+        expect(body).to have_selector(".has-many-container > fieldset > ol > li > a.button.has_many_remove[href='#']", text: "Remove")
       end
 
       it "should add a link to add new nested records" do
-        expect(body).to have_selector(".has_many_container > a.button.has_many_add[href='#']", text: "Add New Post")
+        expect(body).to have_selector(".has-many-container > a.button.has_many_add[href='#']", text: "Add New Post")
       end
 
       it "should set an HTML-id valid placeholder" do
-        link = body.find('.has_many_container > a.button.has_many_add')
+        link = body.find('.has-many-container > a.button.has_many_add')
         expect(link[:'data-placeholder']).to match valid_html_id
       end
 
       describe "with namespaced model" do
         it "should set an HTML-id valid placeholder" do
           allow(Post).to receive(:name).and_return "ActiveAdmin::Post"
-          link = body.find('.has_many_container > a.button.has_many_add')
+          link = body.find('.has-many-container > a.button.has_many_add')
           expect(link[:'data-placeholder']).to match valid_html_id
         end
       end
@@ -637,7 +637,7 @@ RSpec.describe ActiveAdmin::FormBuilder do
         end
 
         it "should wrap the destroy field in an li with class 'has_many_delete'" do
-          expect(body).to have_selector(".has_many_container > fieldset > ol > li.has_many_delete > input", count: 1)
+          expect(body).to have_selector(".has-many-container > fieldset > ol > li.has_many_delete > input", count: 1)
         end
       end
 
@@ -795,7 +795,7 @@ RSpec.describe ActiveAdmin::FormBuilder do
         end
 
         it "shows the nested fields for unsaved records" do
-          expect(body).to have_selector("fieldset.inputs.has_many_fields")
+          expect(body).to have_selector("fieldset.inputs.has-many-fields")
         end
 
       end
@@ -812,7 +812,7 @@ RSpec.describe ActiveAdmin::FormBuilder do
         end
 
         it "shows the nested fields for unsaved records" do
-          expect(body).to have_selector("fieldset.inputs.has_many_fields")
+          expect(body).to have_selector("fieldset.inputs.has-many-fields")
         end
 
       end
@@ -834,7 +834,7 @@ RSpec.describe ActiveAdmin::FormBuilder do
         end
 
         it "shows the nested fields for saved and unsaved records" do
-          expect(body).to have_selector("fieldset.inputs.has_many_fields")
+          expect(body).to have_selector("fieldset.inputs.has-many-fields")
         end
       end
 
@@ -849,7 +849,7 @@ RSpec.describe ActiveAdmin::FormBuilder do
         end
 
         it "defaults to 0" do
-          expect(body).to have_selector("div.has_many_container[data-sortable-start='0']")
+          expect(body).to have_selector("div.has-many-container[data-sortable-start='0']")
         end
       end
 
@@ -864,7 +864,7 @@ RSpec.describe ActiveAdmin::FormBuilder do
         end
 
         it "sets the data attribute" do
-          expect(body).to have_selector("div.has_many_container[data-sortable-start='15']")
+          expect(body).to have_selector("div.has-many-container[data-sortable-start='15']")
         end
       end
     end
@@ -883,15 +883,15 @@ RSpec.describe ActiveAdmin::FormBuilder do
         end
 
         it "should wrap the has_many fieldset in an li" do
-          expect(body).to have_selector("ol > li.has_many_container")
+          expect(body).to have_selector("ol > li.has-many-container")
         end
 
         it "should have a direct fieldset child" do
-          expect(body).to have_selector("li.has_many_container > fieldset")
+          expect(body).to have_selector("li.has-many-container > fieldset")
         end
 
         it "should not contain invalid li children" do
-          expect(body).not_to have_selector("div.has_many_container > li")
+          expect(body).not_to have_selector("div.has-many-container > li")
         end
       end
 
@@ -909,11 +909,11 @@ RSpec.describe ActiveAdmin::FormBuilder do
         end
 
         it "should wrap the inner has_many fieldset in an ol > li" do
-          expect(body).to have_selector(".has_many_container ol > li.has_many_container > fieldset")
+          expect(body).to have_selector(".has-many-container ol > li.has-many-container > fieldset")
         end
 
         it "should not contain invalid li children" do
-          expect(body).not_to have_selector(".has_many_container div.has_many_container > li")
+          expect(body).not_to have_selector(".has-many-container div.has-many-container > li")
         end
       end
     end

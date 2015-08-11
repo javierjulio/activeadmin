@@ -31,7 +31,7 @@ module ActiveAdmin
 
           def wrapper_html_options
             opts = super
-            (opts[:class] ||= '') << ' select_and_search' unless seems_searchable?
+            (opts[:class] ||= '') << ' select-and-search' unless seems_searchable?
             opts
           end
 

@@ -2,18 +2,18 @@ $ ->
   # Provides a before-removal hook:
   # $ ->
   #   # This is a good place to tear down JS plugins to prevent memory leaks.
-  #   $(document).on 'has_many_remove:before', '.has_many_container', (e, fieldset, container)->
+  #   $(document).on 'has_many_remove:before', '.has-many-container', (e, fieldset, container)->
   #     fieldset.find('.select2').select2 'destroy'
   #
   #   # If you need to do anything after removing the items you can use the
   #   has_many_remove:after hook
-  #   $(document).on 'has_many_remove:after', '.has_many_container', (e, fieldset, container)->
-  #     list_item_count = container.find('.has_many_fields').length
+  #   $(document).on 'has_many_remove:after', '.has-many-container', (e, fieldset, container)->
+  #     list_item_count = container.find('.has-many-fields').length
   #     alert("There are now #{list_item_count} items in the list")
   #
   $(document).on 'click', 'a.button.has_many_remove', (e)->
     e.preventDefault()
-    parent    = $(@).closest '.has_many_container'
+    parent    = $(@).closest '.has-many-container'
     to_remove = $(@).closest 'fieldset'
     recompute_positions parent
 
@@ -24,18 +24,18 @@ $ ->
   # Provides before and after creation hooks:
   # $ ->
   #   # The before hook allows you to prevent the creation of new records.
-  #   $(document).on 'has_many_add:before', '.has_many_container', (e, container)->
+  #   $(document).on 'has_many_add:before', '.has-many-container', (e, container)->
   #     if $(@).children('fieldset').length >= 3
   #       alert "you've reached the maximum number of items"
   #       e.preventDefault()
   #
   #   # The after hook is a good place to initialize JS plugins and the like.
-  #   $(document).on 'has_many_add:after', '.has_many_container', (e, fieldset, container)->
+  #   $(document).on 'has_many_add:after', '.has-many-container', (e, fieldset, container)->
   #     fieldset.find('select').chosen()
   #
   $(document).on 'click', 'a.button.has_many_add', (e)->
     e.preventDefault()
-    parent = $(@).closest '.has_many_container'
+    parent = $(@).closest '.has-many-container'
     parent.trigger before_add = $.Event('has_many_add:before'), [parent]
 
     unless before_add.isDefaultPrevented()
@@ -49,15 +49,15 @@ $ ->
       recompute_positions parent
       parent.trigger 'has_many_add:after', [fieldset, parent]
 
-  $(document).on 'change','.has_many_container[data-sortable] :input[name$="[_destroy]"]', ->
+  $(document).on 'change','.has-many-container[data-sortable] :input[name$="[_destroy]"]', ->
     recompute_positions $(@).closest '.has_many'
 
   init_sortable()
-  $(document).on 'has_many_add:after', '.has_many_container', init_sortable
+  $(document).on 'has_many_add:after', '.has-many-container', init_sortable
 
 
 init_sortable = ->
-  elems = $('.has_many_container[data-sortable]:not(.ui-sortable)')
+  elems = $('.has-many-container[data-sortable]:not(.ui-sortable)')
   elems.sortable \
     items: '> fieldset',
     handle: '> ol > .handle',

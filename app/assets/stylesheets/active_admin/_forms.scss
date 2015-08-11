@@ -236,7 +236,7 @@ $date-range-filter-input-width: ($sidebar-inner-content-width / 2) - ($filter-fi
     input {
       width: $date-range-filter-input-width;
 
-      & + input {
+      + input {
         margin-left: 6px;
       }
     }

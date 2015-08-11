@@ -111,10 +111,9 @@ describe ActiveAdmin::Views::TabbedNavigation do
         expect(html).to have_selector("li.current")
       end
 
-      it "should add the 'current' and 'has_nested' classes to the li and 'current' to the sub li" do
+      it "should add the 'current' class to the li and 'current' to the sub li" do
         assigns[:current_tab] = menu["Reports"]["A Sub Reports"]
         expect(html).to have_selector("li#reports.current")
-        expect(html).to have_selector("li#reports.has_nested")
         expect(html).to have_selector("li#a_sub_reports.current")
       end
 

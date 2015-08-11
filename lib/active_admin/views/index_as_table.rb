@@ -213,7 +213,7 @@ module ActiveAdmin
         table_options = {
           id: "index_table_#{active_admin_config.resource_name.plural}",
           sortable: true,
-          class: "index_table index",
+          class: "index-table js-index-table",
           i18n: active_admin_config.resource_class,
           paginator: page_presenter[:paginator] != false,
           row_class: page_presenter[:row_class]

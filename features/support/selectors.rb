@@ -24,7 +24,7 @@ module HtmlSelectorsHelpers
     #    [:xpath, "//header"]
 
     when "index grid"
-      [:css, "table.index_grid"]
+      [:css, "table.index-grid"]
 
     when /^the "([^"]*)" sidebar$/
       [:css, "##{$1.tr(" ", '').parameterize}-sidebar-section"]

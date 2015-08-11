@@ -11,7 +11,7 @@ module ActiveAdmin
       include ::ActiveAdmin::Helpers::Collection
 
       def default_class_name
-        "indexes table_tools_segmented_control"
+        "indexes table-tools-segmented-control"
       end
 
       def tag_name

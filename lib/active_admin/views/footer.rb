@@ -3,7 +3,7 @@ module ActiveAdmin
     class Footer < Component
 
       def build
-        super id: "footer"
+        super id: "footer", class: "footer"
         powered_by_message
       end
 

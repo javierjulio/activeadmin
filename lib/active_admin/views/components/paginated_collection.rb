@@ -66,10 +66,10 @@ module ActiveAdmin
       protected
 
       def build_pagination_with_formats(options)
-        div id: "index_footer" do
+        div class: "index-footer" do
           build_per_page_select if @per_page.is_a?(Array)
           build_pagination
-          div(page_entries_info(options).html_safe, class: "pagination_information")
+          div(page_entries_info(options).html_safe, class: "pagination-information")
 
           formats = build_download_formats @download_links
           build_download_format_links formats if formats.any?

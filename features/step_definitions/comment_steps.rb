@@ -1,9 +1,9 @@
 Then /^I should see a comment by "([^"]*)"$/ do |name|
-  step %{I should see "#{name}" within ".active_admin_comment_author"}
+  step %{I should see "#{name}" within ".active-admin-comment-author"}
 end
 
 When /^I add a comment "([^"]*)"$/ do |comment|
-  step %{I fill in "active_admin_comment_body" with "#{comment}"}
+  step %{I fill in ".active-admin-comment-body" with "#{comment}"}
   step  %{I press "Add Comment"}
 end
 

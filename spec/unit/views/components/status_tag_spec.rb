@@ -20,7 +20,7 @@ describe ActiveAdmin::Views::StatusTag do
 
     describe '#class_list' do
       subject { super().class_list }
-      it      { is_expected.to include('status_tag') }
+      it      { is_expected.to include('status-tag') }
     end
 
     context "when status is 'completed'" do
@@ -33,7 +33,7 @@ describe ActiveAdmin::Views::StatusTag do
 
       describe '#class_list' do
         subject { super().class_list }
-        it      { is_expected.to include('status_tag') }
+        it      { is_expected.to include('status-tag') }
       end
 
       describe '#class_list' do
@@ -80,7 +80,7 @@ describe ActiveAdmin::Views::StatusTag do
 
       describe '#class_list' do
         subject { super().class_list }
-        it      { is_expected.to include('status_tag') }
+        it      { is_expected.to include('status-tag') }
       end
 
       describe '#content' do
@@ -94,7 +94,7 @@ describe ActiveAdmin::Views::StatusTag do
 
       describe '#class_list' do
         subject { super().class_list }
-        it      { is_expected.to include('status_tag') }
+        it      { is_expected.to include('status-tag') }
       end
 
       describe '#content' do
@@ -108,7 +108,7 @@ describe ActiveAdmin::Views::StatusTag do
 
       describe '#class_list' do
         subject { super().class_list }
-        it      { is_expected.to include('status_tag') }
+        it      { is_expected.to include('status-tag') }
       end
 
       describe '#content' do
@@ -136,7 +136,7 @@ describe ActiveAdmin::Views::StatusTag do
 
       describe '#class_list' do
         subject { super().class_list }
-        it      { is_expected.to include('status_tag') }
+        it      { is_expected.to include('status-tag') }
       end
 
       describe '#class_list' do
@@ -160,7 +160,7 @@ describe ActiveAdmin::Views::StatusTag do
 
       describe '#class_list' do
         subject { super().class_list }
-        it      { is_expected.to include('status_tag') }
+        it      { is_expected.to include('status-tag') }
       end
 
       describe '#class_list' do
@@ -184,7 +184,7 @@ describe ActiveAdmin::Views::StatusTag do
 
       describe '#class_list' do
         subject { super().class_list }
-        it      { is_expected.to include('status_tag') }
+        it      { is_expected.to include('status-tag') }
       end
 
       describe '#class_list' do

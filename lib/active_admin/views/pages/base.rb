@@ -71,7 +71,7 @@ module ActiveAdmin
 
         def build_page_content
           build_flash_messages
-          div id: "active_admin_content", class: (skip_sidebar? ? "without_sidebar" : "with_sidebar") do
+          div id: "js-active-admin-content", class: "active-admin-content " + (skip_sidebar? ? "without-sidebar" : "with-sidebar") do
             build_main_content_wrapper
             build_sidebar unless skip_sidebar?
           end
@@ -86,8 +86,8 @@ module ActiveAdmin
         end
 
         def build_main_content_wrapper
-          div id: "main_content_wrapper" do
-            div id: "main_content" do
+          div class: "main-content-wrapper" do
+            div class: "main-content" do
               main_content
             end
           end
@@ -125,7 +125,7 @@ module ActiveAdmin
 
         # Renders the sidebar
         def build_sidebar
-          div id: "sidebar" do
+          div class: "sidebar-wrapper" do
             sidebar_sections_for_action.collect do |section|
               sidebar_section(section)
             end

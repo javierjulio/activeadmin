@@ -21,12 +21,12 @@ describe ActiveAdmin::Views::SidebarSection do
     expect(html).to have_css '.panel-title', text: 'Help Section'
   end
 
-  it "should have the class of 'sidebar_section'" do
-    expect(html).to have_css ".sidebar_section"
+  it "should have the class of 'sidebar-section'" do
+    expect(html).to have_css ".sidebar-section"
   end
 
   it "should have an id based on the title" do
-    expect(html).to have_css "#help-section_sidebar_section"
+    expect(html).to have_css "#help-section-sidebar-section"
   end
 
   it "should have a panel body" do

@@ -1,4 +1,4 @@
-/* Active Admin Print Stylesheet */
+// Active Admin Print Stylesheet
 
 @import "active_admin/mixins/variables";
 
@@ -8,11 +8,11 @@ $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif 
 $font-size-base: 13px;
 $line-height-base: 1.5;
 
-$primary-color: black;
-$text-color: black;
+$primary-color: #000000;
+$text-color: #000000;
 
-$table-border-color: black;
-$fieldset-border-color: black;
+$table-border-color: #000000;
+$fieldset-border-color: #000000;
 
 // Normalize
 @import "active_admin/normalize";
@@ -35,22 +35,22 @@ a {
 }
 
 // Hidden
-.unsupported_browser,
+.unsupported-browser,
 .main-navbar,
 .flash,
 .breadcrumb,
 .title-bar-actions,
 .panel-heading-actions,
 td .empty,
-.member_link,
-#index_footer,
-.pagination_information,
+.member-link,
+.index-footer,
+.pagination-information,
 .comments form,
 input[type=file],
 form .password,
 form .hidden,
 form .actions,
-#filters_sidebar_section,
+#filters-sidebar-section,
 #footer {
   display: none;
 }
@@ -148,7 +148,7 @@ table {
 }
 
 // Attribute Tables
-.attributes_table {
+.attributes-table {
   td {
     img {
       max-height: 4in;

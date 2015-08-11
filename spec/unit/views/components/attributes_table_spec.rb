@@ -60,9 +60,9 @@ describe ActiveAdmin::Views::AttributesTable do
       context context_title do
         let(:table) { instance_eval &table_decleration }
 
-        it "should render a div wrapper with the class '.attributes_table'" do
+        it "should render a div wrapper with the class '.attributes-table'" do
           expect(table.tag_name).to eq 'div'
-          expect(table.attr(:class)).to include('attributes_table')
+          expect(table.attr(:class)).to include('attributes-table')
         end
 
         it "should add id and type class" do

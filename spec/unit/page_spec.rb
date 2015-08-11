@@ -70,7 +70,7 @@ module ActiveAdmin
       expect(config.action_items?).to eq false
     end
 
-    it "should not have any sidebar_sections" do
+    it "should not have any sidebar-sections" do
       expect(config.sidebar_sections?).to eq false
     end
 

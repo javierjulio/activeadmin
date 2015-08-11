@@ -74,7 +74,7 @@ index do
   selectable_column
   column :title
   actions do |post|
-    item "Preview", admin_preview_post_path(post), class: "member_link"
+    item "Preview", admin_preview_post_path(post), class: "member-link"
   end
 end
 ```

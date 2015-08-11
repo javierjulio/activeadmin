@@ -27,8 +27,8 @@ $(document).on 'ready page:load turbolinks:load', ->
 
   if $(".batch_actions_selector").length && $(":checkbox.toggle_all").length
 
-    if $(".paginated_collection table.index_table").length
-      $(".paginated_collection table.index_table").tableCheckboxToggler()
+    if $(".js-index-table").length
+      $(".js-index-table").tableCheckboxToggler()
     else
       $(".paginated_collection").checkboxToggler()
 

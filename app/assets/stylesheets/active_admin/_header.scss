@@ -54,10 +54,6 @@
         color: $navbar-link-hover-color;
       }
 
-      &.has_nested:hover > a {
-        z-index: $z-index-navbar; // so top part of sub menu box-shadow doesn't appear over this link
-      }
-
       &:hover ul {
         display: block;
       }

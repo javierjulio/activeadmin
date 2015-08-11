@@ -20,12 +20,12 @@ class ActiveAdmin.PerPage
     while m = re.exec(query)
       params[@_decode(m[1])] = @_decode(m[2])
     params
-   
+
   _decode: (value) ->
     #replace "+" before decodeURIComponent
-    decodeURIComponent(value.replace(/\+/g, '%20')) 
+    decodeURIComponent(value.replace(/\+/g, '%20'))
 
 $.widget.bridge 'perPage', ActiveAdmin.PerPage
 
 $ ->
-  $('.pagination_per_page select').perPage()
+  $('.js-pagination-per-page select').perPage()

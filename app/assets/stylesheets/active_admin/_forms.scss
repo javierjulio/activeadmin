@@ -22,7 +22,8 @@ textarea {
 }
 
 .formtastic {
-  ol, ul {
+  ol,
+  ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -197,7 +198,7 @@ textarea {
 
 $sidebar-inner-content-width: $sidebar-width - ($panel-body-padding * 2);
 
-.sidebar_section {
+.sidebar-section {
   select {
     width: $sidebar-inner-content-width;
   }

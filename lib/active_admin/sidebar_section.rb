@@ -12,7 +12,7 @@ module ActiveAdmin
 
     # The id gets used for the div in the view
     def id
-      "#{name.downcase.underscore}_sidebar_section".parameterize
+      "#{name.downcase.parameterize}-sidebar-section".parameterize
     end
 
     # The title gets displayed within the section in the view

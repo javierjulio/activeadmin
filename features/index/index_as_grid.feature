@@ -12,8 +12,8 @@ Feature: Index as Grid
         end
       end
       """
-    Then the table ".index_grid" should have 3 rows
-    And the table ".index_grid" should have 3 columns
+    Then the table ".index-grid" should have 3 rows
+    And the table ".index-grid" should have 3 columns
     And there should be 9 "a" tags within index grid
 
   Scenario: Viewing index as a grid and set the number of columns
@@ -26,9 +26,9 @@ Feature: Index as Grid
         end
       end
       """
-    Then the table ".index_grid" should have 9 rows
-    And the table ".index_grid" should have 1 columns
-    And there should be 9 "a" tags within "table.index_grid"
+    Then the table ".index-grid" should have 9 rows
+    And the table ".index-grid" should have 1 columns
+    And there should be 9 "a" tags within "table.index-grid"
 
   Scenario: Viewing index as a grid with an odd number of items
     Given 9 posts exist
@@ -40,6 +40,6 @@ Feature: Index as Grid
         end
       end
       """
-    Then the table ".index_grid" should have 5 rows
-    And the table ".index_grid" should have 2 columns
-    And there should be 9 "a" tags within "table.index_grid"
+    Then the table ".index-grid" should have 5 rows
+    And the table ".index-grid" should have 2 columns
+    And there should be 9 "a" tags within "table.index-grid"

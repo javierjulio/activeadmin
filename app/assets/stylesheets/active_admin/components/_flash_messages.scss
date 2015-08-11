@@ -4,12 +4,12 @@
   font-weight: $flash-message-font-weight;
   padding: $flash-message-padding;
 
-  &.flash_notice {
+  &.flash-notice {
     background-color: $flash-message-notice-background-color;
     color: $flash-message-notice-text-color;
   }
 
-  &.flash_error {
+  &.flash-error {
     background-color: $flash-message-error-background-color;
     color: $flash-message-error-text-color;
   }

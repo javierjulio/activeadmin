@@ -13,7 +13,7 @@ module ActiveAdmin
       include ::ActiveAdmin::Helpers::Collection
 
       def default_class_name
-        "scopes table_tools_segmented_control"
+        "scopes table-tools-segmented-control"
       end
 
       def tag_name

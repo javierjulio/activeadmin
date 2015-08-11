@@ -1,6 +1,6 @@
 Then /^I should see (\d+) ([\w]*) in the table$/ do |count, resource_type|
   expect(page).to \
-    have_css("table.index_table tr > td:first-child", count: count.to_i)
+    have_css("table.index-table tr > td:first-child", count: count.to_i)
 end
 
 # TODO: simplify this, if possible?

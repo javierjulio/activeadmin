@@ -22,7 +22,7 @@ thead {
 }
 
 // -------------------------------------- Index Tables
-.index_table {
+.index-table {
   th {
     a,
     a:link,
@@ -75,16 +75,8 @@ thead {
   }
 }
 
-// -------------------------------------- Tables inside Panels
-.panel_contents table {
-  th,
-  td {
-    padding: $table-condensed-cell-padding;
-  }
-}
-
 // -------------------------------------- Resource Attributes Table
-.attributes_table {
+.attributes-table {
   overflow: hidden;
 
   table {
@@ -109,6 +101,6 @@ thead {
   }
 }
 
-.sidebar-section .attributes_table th {
+.sidebar-section .attributes-table th {
   width: 80px;
 }

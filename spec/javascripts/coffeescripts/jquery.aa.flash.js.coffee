@@ -1,7 +1,7 @@
 describe "ActiveAdmin.flash", ->
   beforeEach ->
     loadFixtures('flashes.html')
-    @flashes = $(".flashes")
+    @flashes = $(".js-flash-messages")
 
   describe "abstract", ->
     it "should add a flash box with class and message"

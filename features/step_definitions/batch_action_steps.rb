@@ -20,7 +20,7 @@ Then /^the (\d+)(?:st|nd|rd|th) batch action should be "([^"]*)"$/ do |index, ti
 end
 
 When /^I check the (\d+)(?:st|nd|rd|th) record$/ do |index|
-  page.all("table.index_table input[type=checkbox]")[index.to_i].set true
+  page.all("table.index-table input[type=checkbox]")[index.to_i].set true
 end
 
 When /^I toggle the collection selection$/ do
@@ -32,7 +32,7 @@ Then /^I should see that the batch action button is disabled$/ do
 end
 
 Then /^I (should|should not) see the batch action (button|selector)$/ do |maybe, type|
-  selector = "div.table_tools .batch_actions_selector"
+  selector = "div.table-tools .batch_actions_selector"
   selector << ' .button' if maybe == 'should' && type == 'button'
 
   verb = maybe == 'should' ? :to : :to_not

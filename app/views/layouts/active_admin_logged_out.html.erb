@@ -28,7 +28,9 @@
       <%= content_tag :div, message, class: "flash flash_#{type}" %>
     <% end %>
     <div id="active_admin_content">
-      <%= yield %>
+      <div class="devise-form-container">
+        <%= yield %>
+      </div>
     </div>
   </div>
   <div id="footer">

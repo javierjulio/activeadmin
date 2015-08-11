@@ -9,6 +9,7 @@ java_script:
 
 scss:
   enabled: false
+  config_file: .scss-style.yml
 
 Metrics/LineLength:
   Max: 110

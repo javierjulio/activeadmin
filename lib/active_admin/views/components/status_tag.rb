@@ -10,10 +10,6 @@ module ActiveAdmin
         'span'
       end
 
-      def default_class_name
-        'status-tag'
-      end
-
       # @overload status_tag(status, options = {})
       #   @param [String] status the status to display. One of the span classes will be an underscored version of the status.
       #   @param [Hash] options

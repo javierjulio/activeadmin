@@ -47,7 +47,7 @@ textarea {
 
     abbr {
       border: none;
-      color:  $required-field-marker-color;
+      color: $required-field-marker-color;
       margin-left: 0.3em;
     }
   }
@@ -72,7 +72,7 @@ textarea {
       width: 100%;
     }
 
-    .has_many_container {
+    .has-many-container {
       h3 {
         border-bottom: 1px solid darken($panel-background-color, 12%);
         margin-bottom: 20px;
@@ -85,7 +85,7 @@ textarea {
   }
 
   // relative so the absolutely-positioned handle will fit
-  .has_many_fields {
+  .has-many-fields {
     border-bottom: 1px solid darken($panel-background-color, 12%);
     margin-bottom: 15px;
     padding: 0 15px;
@@ -111,7 +111,7 @@ textarea {
   legend.label {
     font-size: inherit;
     left: 0;
-    position: absolute
+    position: absolute;
   }
 
   .choices-group,
@@ -127,7 +127,7 @@ textarea {
 
   .choice,
   .fragment {
-    margin: 0 0 0.5em 0;
+    margin: 0 0 0.5em;
   }
 
   .fragment {
@@ -213,15 +213,15 @@ $side-by-side-filter-select-width: ($sidebar-inner-content-width / 2);
 
 $date-range-filter-input-width: ($sidebar-inner-content-width / 2) - ($filter-field-seperator-width / 2);
 
-.filter_form_field {
+.filter-form-field {
   margin-bottom: 12px;
 
   .label {
     display: block;
-    margin: 0 0 0.18em 0;
+    margin: 0 0 0.18em;
   }
 
-  &.select_and_search {
+  &.select-and-search {
     input[type=text] {
       margin-left: $filter-field-seperator-width;
       width: $side-by-side-filter-input-width;
@@ -232,7 +232,7 @@ $date-range-filter-input-width: ($sidebar-inner-content-width / 2) - ($filter-fi
     }
   }
 
-  &.filter_date_range {
+  &.filter-date-range {
     input {
       width: $date-range-filter-input-width;
 
@@ -243,7 +243,7 @@ $date-range-filter-input-width: ($sidebar-inner-content-width / 2) - ($filter-fi
   }
 }
 
-.filter_check_boxes {
+.filter-check-boxes {
   .choices {
     border: none;
     margin: 0;
@@ -255,7 +255,7 @@ $date-range-filter-input-width: ($sidebar-inner-content-width / 2) - ($filter-fi
   }
 }
 
-.filter_form {
+.filter-form {
   .buttons > * {
     margin-right: 5px;
   }

@@ -37,7 +37,7 @@ module ActiveAdmin
       custom_settings = :new_record, :allow_destroy, :heading, :sortable, :sortable_start
       builder_options = {new_record: true}.merge! options.slice  *custom_settings
       options         = {for: assoc      }.merge! options.except *custom_settings
-      options[:class] = [options[:class], "inputs has_many_fields"].compact.join(' ')
+      options[:class] = [options[:class], "inputs has-many-fields"].compact.join(' ')
       sortable_column = builder_options[:sortable]
       sortable_start  = builder_options.fetch(:sortable_start, 0)
 
@@ -71,7 +71,7 @@ module ActiveAdmin
       end
 
       tag = @already_in_an_inputs_block ? :li : :div
-      html = template.content_tag(tag, html, class: "has_many_container #{assoc}", 'data-sortable' => sortable_column, 'data-sortable-start' => sortable_start)
+      html = template.content_tag(tag, html, class: "has-many-container #{assoc}", 'data-sortable' => sortable_column, 'data-sortable-start' => sortable_start)
       template.concat(html) if template.output_buffer
       html
     end

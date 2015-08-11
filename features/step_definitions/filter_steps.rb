@@ -1,9 +1,9 @@
 Then /^I should see a select filter for "([^"]*)"$/ do |label|
-  expect(page).to have_css '.filter_select label', text: label
+  expect(page).to have_css '.filter-select label', text: label
 end
 
 Then /^I should see a string filter for "([^"]*)"$/ do |label|
-  expect(page).to have_css '.filter_string label', text: label
+  expect(page).to have_css '.filter-string label', text: label
 end
 
 Then /^I should see a date range filter for "([^"]*)"$/ do |label|

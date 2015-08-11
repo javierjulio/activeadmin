@@ -30,8 +30,8 @@ module ActiveAdmin
 
         def build_comment(comment)
           div for: comment do
-            div class: 'active_admin_comment_meta' do
-              span class: 'active_admin_comment_author' do
+            div class: 'active-admin-comment-meta' do
+              span class: 'active-admin-comment-author' do
                 comment.author ? auto_link(comment.author) : I18n.t('active_admin.comments.author_missing')
               end
               span I18n.t('active_admin.comments.commented_on')
@@ -40,7 +40,7 @@ module ActiveAdmin
                 text_node link_to I18n.t('active_admin.comments.delete'), comments_url(comment.id), method: :delete, data: { confirm: I18n.t('active_admin.comments.delete_confirmation') }
               end
             end
-            div class: 'active_admin_comment_body' do
+            div class: 'active-admin-comment-body' do
               simple_format comment.body
             end
           end

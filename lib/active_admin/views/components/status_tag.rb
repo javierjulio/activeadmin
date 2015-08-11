@@ -11,7 +11,7 @@ module ActiveAdmin
       end
 
       def default_class_name
-        'status_tag'
+        'status-tag'
       end
 
       # @overload status_tag(status, options = {})
@@ -24,11 +24,11 @@ module ActiveAdmin
       #
       # @example
       #   status_tag('In Progress')
-      #   # => <span class='status_tag in_progress'>In Progress</span>
+      #   # => <span class='status-tag in_progress'>In Progress</span>
       #
       # @example
       #   status_tag('active', class: 'important', id: 'status_123', label: 'on')
-      #   # => <span class='status_tag active important' id='status_123'>on</span>
+      #   # => <span class='status-tag active important' id='status_123'>on</span>
       #
       def build(status, options = {})
         label = options.delete(:label)

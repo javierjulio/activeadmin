@@ -25,7 +25,7 @@ module ActiveAdmin
 
         def wrapper_html_options
           opts = super
-          (opts[:class] ||= '') << " filter-form-field filter-#{as}"
+          (opts[:class] ||= '') << " filter-form-field filter-#{as.dasherize}"
           opts
         end
 

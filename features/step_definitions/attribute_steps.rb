@@ -9,7 +9,7 @@ Then /^I should see the attribute "([^"]*)" with a nicely formatted datetime$/ d
 end
 
 Then /^the attribute "([^"]*)" should be empty$/ do |title|
-  elems = all ".attributes_table th:contains('#{title}') ~ td > span.empty"
+  elems = all ".attributes-table th:contains('#{title}') ~ td > span.empty-value"
   expect(elems.first).to_not eq(nil), 'attribute not empty'
 end
 

@@ -159,7 +159,7 @@ describe ActiveAdmin::ViewHelpers::DisplayHelper do
 
       value = format_attribute post, :starred
 
-      expect(value.to_s).to eq "<span class=\"status_tag yes\">Yes</span>\n"
+      expect(value.to_s).to eq "<span class=\"status-tag yes\">Yes</span>\n"
     end
   end
 end

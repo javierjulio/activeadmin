@@ -67,4 +67,4 @@ class ActiveAdmin.DropdownMenu
 $.widget.bridge 'aaDropdownMenu', ActiveAdmin.DropdownMenu
 
 $(document).on 'ready page:load turbolinks:load', ->
-  $('.dropdown_menu').aaDropdownMenu()
+  $('.dropdown').aaDropdownMenu()

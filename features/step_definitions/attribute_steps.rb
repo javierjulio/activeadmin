@@ -1,5 +1,5 @@
 Then /^I should see the attribute "([^"]*)" with "([^"]*)"$/ do |title, value|
-  elems = all ".attributes_table th:contains('#{title}') ~ td:contains('#{value}')"
+  elems = all ".attributes-table th:contains('#{title}') ~ td:contains('#{value}')"
   expect(elems.first).to_not eq(nil), 'attribute missing'
 end
 

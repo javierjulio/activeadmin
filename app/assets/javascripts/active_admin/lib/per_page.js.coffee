@@ -38,5 +38,8 @@ class ActiveAdmin.PerPage
 
 $.widget.bridge 'perPage', ActiveAdmin.PerPage
 
+$ ->
+  $('.js-pagination-per-page select').perPage()
+
 $(document).on 'ready page:load turbolinks:load', ->
   $('.js-pagination-per-page select').perPage()

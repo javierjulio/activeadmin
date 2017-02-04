@@ -185,7 +185,7 @@ Feature: Registering Pages
       content do
         collection = Kaminari.paginate_array(User.all).page(params.fetch(:page, 1))
 
-        table_for(collection, class: "index_table") do
+        table_for(collection, class: "index-table") do
           column :first_name
           column :last_name
         end

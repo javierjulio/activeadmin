@@ -223,7 +223,7 @@ Feature: Registering Pages
      ActiveAdmin.register Post
      ActiveAdmin.register_page "Last Posts" do
        content do
-         table_for Post.last(2), sortable: true, class: "index_table" do
+         table_for Post.last(2), sortable: true, class: "index-table" do
            column :id
            column :title
            column :author

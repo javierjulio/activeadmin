@@ -48,7 +48,7 @@ module ActiveAdmin
           if url = item.url(self)
             link = link_to url, item.html_options do
               if children.present?
-                (item.label(self) + ' ' + tag(:span, class: 'caret')).html_safe
+                (item.label(self) + ' ' + helpers.tag(:span, class: 'caret')).html_safe
               else
                 item.label(self)
               end

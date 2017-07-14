@@ -17,12 +17,14 @@ module ActiveAdmin
       end
 
       def build_menu_item(title, options, &block)
-        fragment = @id_prefix + options.fetch(:id, title.parameterize)
+        # fragment = "#{@id_prefix}#{options.fetch(:id, title.parameterize)}"
+        fragment = options.fetch(:id, title.parameterize)
         li { link_to title, "##{fragment}", data: { toggle: "tab" } }
       end
 
       def build_content_item(title, options, &block)
-        fragment = @id_prefix + options.fetch(:id, title.parameterize)
+        # fragment = "#{@id_prefix}#{options.fetch(:id, title.parameterize)}"
+        fragment = options.fetch(:id, title.parameterize)
         classes = [ 'tab-pane' ]
         classes << 'active' if @is_first_item
         @is_first_item = false
